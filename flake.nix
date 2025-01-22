@@ -2,7 +2,7 @@
   description = "My Astal Config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.11";
 
     ags = {
       url = "github:aylur/ags";
@@ -31,8 +31,6 @@
           ags.packages.${system}.tray
           ags.packages.${system}.wireplumber
           ags.packages.${system}.apps
-          # ags.packages.${system}.battery
-          # pkgs.fzf
         ];
       };
     };
